@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+         <meta charset="UTF-8">
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Adicionar Nova Postagem ao Blog</h2>
+
+    <!-- O atributo 'action' define o arquivo PHP que processará os dados -->
+    <!-- O atributo 'method' define como os dados serão enviados (POST) -->
+    <form action="processa.php" method="POST">
+
+        <label for="titulo">Título da Postagem:</label><br>
+        <input type="text" id="titulo" name="titulo" required>
+        <br><br>
+
+        <label for="conteudo">Conteúdo:</label><br>
+        <textarea id="conteudo" name="conteudo" rows="5" cols="40" required></textarea>
+        <br><br>
+
+        <label for="autor">Autor:</label><br>
+        <input type="text" id="autor" name="autor" required>
+        <br><br>
+
+        <input type="submit" value="Publicar Postagem">
+    </form>
+</body>
+</html>
