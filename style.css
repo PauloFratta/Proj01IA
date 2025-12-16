@@ -3,17 +3,21 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
+.form-container {
+    max-width: 600px;
+    width: 90%;
     background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 h1, h2 {
@@ -23,6 +27,7 @@ h1, h2 {
 
 form {
     text-align: left;
+    width: 100%;
 }
 
 label {
